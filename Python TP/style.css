@@ -1,0 +1,386 @@
+
+body{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*MENU DEL HEADER*/
+
+.contenedor-header{
+    background: #000000 ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family:serif;
+    font-size: 36px;
+    color: rgb(119, 0, 231);
+    text-decoration: none;  
+}
+.contenedor-header header ul{
+    list-style-type: none;
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none; 
+}
+.contenedor-header header nav ul li a:hover{
+    color: rgb(119, 0, 231);
+}
+
+
+/*Seccion inicio*/
+
+a{  
+    text-decoration: none; 
+}
+
+.inicio {
+    background: linear-gradient(to top, rgb(35, 0, 68), #000000);
+    background-size: cover;
+    height: 80%; 
+    display: grid;
+    flex-direction: column; 
+    color: white;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+}
+
+.inicio p {
+    width: 70%; 
+    padding: 0 15%;
+}
+
+.inicio h1 { 
+    padding-top: 5%;
+}
+
+
+/*Video*/
+
+.video{
+    background: linear-gradient(to top,#000000, rgb(35, 0, 68));
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 65vh;
+    justify-content: center;
+}
+
+.video iframe {
+    max-width: 100%;
+}
+
+/*Sobre el Show*/
+
+.sobre-el-show {
+    background-image: linear-gradient(to bottom, black 0%, rgba(255, 0, 149, 0) 50%, black 100%), url(img/space.jpg);
+    color: white;
+    text-align: center;
+    padding: 5%;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.sobre-el-show .contenido-sobre-el-show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-el-show .contenido-sobre-el-show .beneficios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.sobre-el-show .contenido-sobre-el-show .beneficio {
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.sobre-el-show .contenido-sobre-el-show .beneficio:hover {
+    background-color: rgb(119, 0, 231); 
+}
+
+/*CONTACTO*/
+
+/* Formulario */
+
+/*Estilos dentro del form*/
+
+input[type="text"] {
+    width: 80%; 
+    height: 5%;
+    padding: 10px; 
+    font-size: 16px; 
+}
+
+input[type="email"] {
+    width: 80%; 
+    height: 5%;
+    padding: 10px; 
+    font-size: 16px; 
+}
+
+textarea {
+    width: 80%; 
+    height: 20%;
+    padding: 10px; 
+    font-size: 16px;
+}
+
+label {
+    font-size: 22px;  
+}
+
+button {
+    width: 200px;
+    font-size: 18px; 
+    border-radius: 20%;
+}
+
+button:hover {
+    background-color: #b30077;
+    color: #fff;
+    box-shadow: 0 4px 6px rgb(35, 0, 68);
+}
+
+.contacto{
+    color: white;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background: linear-gradient(to top, rgb(35, 0, 68), #000000);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-contenedor {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+    margin-right: 10px;
+}
+
+.formulario-contacto {
+    background-color:rgba(53, 42, 42, 0.253)   ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    height: 350px;
+    width: 350px;
+    justify-content: center;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mapa-contenedor{
+    margin-left: 300px;
+}
+
+.mapa{
+    border-radius: 100%;
+    height: 350px;
+    width: 350px;
+}
+
+.mapa:hover {
+    transform: scale(1.05);
+}
+
+/*ENTRENAMIENTO*/
+
+
+.entrenamiento {
+    text-align: center;
+    background-color: #000000;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    color: #fff;
+}
+
+.contenido-entrenamiento {
+    display: flex;
+    justify-content: center;
+}
+
+.col-izq, .col-der {
+    flex: 1;
+    margin: 0 10px; 
+    background-color: #000000;
+    padding: 25px;
+    position: relative;
+}
+
+.item-izq, .item-der {
+    margin-bottom: 30px;
+}
+
+.col-der .item-der {
+    background: linear-gradient(to right, black 0%,  rgba(93, 0, 180, 0.685), black 100%);
+    padding: 25px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.col-der .item-der img {
+
+    width: 300px; 
+    height:130px; 
+    object-fit: cover; 
+    display: block;
+    margin-bottom: 15px;      
+    margin: 0 auto;  
+    padding-block: 2px;
+}
+
+/*Seccion Arte*/
+
+.arte {
+    color: #fff;
+    text-align: center;
+    background-image: linear-gradient(to bottom, black 0%, rgba(255, 0, 149, 0) 50%, black 100%), url(img/4.jpg);
+
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.arte h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: -5%;
+    padding-bottom: 5%;
+}
+
+.arte p{
+    padding-bottom: 5%;
+}
+
+.arte-contenedor {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.imagen {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 100%;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    border: 3px solid transparent; 
+}
+
+.imagen:hover {
+    transform: scale(1.05);
+    border: 6px solid rgb(119, 0, 231);
+    box-shadow: 0 0 10px rgba(119, 0, 231, 0.5); 
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Boton entradas*/
+
+.entradas{
+    background: linear-gradient(to top, #000000, rgb(35, 0, 68));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding-top: 5%;
+    padding-bottom: 10%;
+} 
+
+.consigue{
+    height: 70px;
+    width: 700px;
+    padding: 15px 30px; 
+    font-size: 18px; 
+    border: 2px solid rgba(119, 0, 231, 0.5); 
+    background-color: #000000; 
+    color: #ffffff;
+    border-radius: 80px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.consigue:hover {
+    background-color:rgba(119, 0, 231, 0.5); 
+}
+
+.consigue a{
+    color: #fff;
+}
+
+.informacion{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+.columnas{
+    display: flex;
+    justify-content: center;
+}
+
+.col1, .col2, .col3{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
